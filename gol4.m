@@ -7,10 +7,12 @@ function Conway()
     screen_board(50, 50) = 1;
     screen_board(50, 49) = 1;
     screen_board(49, 48) = 1;
+    %set initial pattern (tub)
     screen_board(75,27)=1;
     screen_board(77,27)=1;
     screen_board(76,26)=1;
     screen_board(76,28)=1;
+    %set initial pattern (oscillator)
     screen_board(25,75)=1;
     screen_board(25,76)=1;
     screen_board(25,78)=1;
@@ -39,7 +41,7 @@ function Conway()
         % Iterate over each cell in the grid
         for j = 1:board_size
             for k = 1:board_size
-                % Count live neighbors (wrap-around using mod)
+                % Count live neighbors 
                 nc = -screen_board(j, k);
                 for dj = -1:1
                     for dk = -1:1
