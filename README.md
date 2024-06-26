@@ -5,3 +5,5 @@ This is the implementation of Conway's game of life using GNU Octave.The univers
     Any live cell with two or three live neighbours lives on to the next generation.
     Any live cell with more than three live neighbours dies, as if by overpopulation.
     Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
+In this project, three patterns (tub, glider and penta-decathlon oscillator) are implemented.
